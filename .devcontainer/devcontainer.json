@@ -3,7 +3,6 @@
   "dockerComposeFile": "docker-compose.yml",
   "service": "app",
   "settings": {
-    "terminal.integrated.defaultProfile.linux": "bash"
   },
   "extensions": [
     "dbaeumer.vscode-eslint",
@@ -12,6 +11,5 @@
     "firsttris.vscode-jest-runner",
     "ms-azuretools.vscode-docker"
   ],
-  "forwardPorts": [5432],
-  "postCreateCommand": "npm install -g @nestjs/cli pg"
+  "forwardPorts": [5432]
 }
