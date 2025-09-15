@@ -2,7 +2,6 @@
   "name": "Nest + Postgres Dev",
   "dockerComposeFile": "docker-compose.yml",
   "service": "app",
-  "workspaceFolder": "/workspace",
   "settings": {
     "terminal.integrated.defaultProfile.linux": "bash"
   },
