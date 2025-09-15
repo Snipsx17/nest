@@ -1,17 +1,28 @@
-version: "3"
+version: "3.8"
+
 
 services:
-  db:
-    image: postgres:15
-    restart: always
-    environment:
-      POSTGRES_USER: devuser
-      POSTGRES_PASSWORD: devpass
-      POSTGRES_DB: devdb
-    ports:
-      - "5432:5432"
-    volumes:
-      - postgres-data:/var/lib/postgresql/data
+app:
+image: mcr.microsoft.com/devcontainers/base:0-bullseye
+volumes:
+- ..:/workspace:cached
+command: sleep infinity
+depends_on:
+- db
+
+
+db:
+image: postgres:15
+restart: unless-stopped
+environment:
+POSTGRES_USER: devuser
+POSTGRES_PASSWORD: devpass
+POSTGRES_DB: devdb
+ports:
+- "5432:5432"
+volumes:
+- postgres-data:/var/lib/postgresql/data
+
 
 volumes:
-  postgres-data:
+postgres-data:
