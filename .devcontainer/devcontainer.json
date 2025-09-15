@@ -1,15 +1,13 @@
 {
-  "name": "Nest + Postgres Dev",
-  "dockerComposeFile": "docker-compose.yml",
-  "service": "app",
-  "settings": {
-  },
-  "extensions": [
-    "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode",
-    "nrwl.angular-console",
-    "firsttris.vscode-jest-runner",
-    "ms-azuretools.vscode-docker"
-  ],
-  "forwardPorts": [5432]
+"name": "Codespace - Postgres only",
+"dockerComposeFile": "docker-compose.yml",
+"service": "app",
+"workspaceFolder": "/workspace",
+"shutdownAction": "stopCompose",
+"settings": {
+"terminal.integrated.defaultProfile.linux": "bash"
+},
+"forwardPorts": [5432],
+"extensions": [],
+"remoteUser": "vscode"
 }
