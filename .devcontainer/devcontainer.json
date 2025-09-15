@@ -1,13 +1,13 @@
 {
-"name": "Codespace - Postgres only",
-"dockerComposeFile": "docker-compose.yml",
-"service": "app",
-"workspaceFolder": "/workspace",
-"shutdownAction": "stopCompose",
-"settings": {
-"terminal.integrated.defaultProfile.linux": "bash"
-},
-"forwardPorts": [5432],
-"extensions": [],
-"remoteUser": "vscode"
+  "name": "Codespace - Postgres only",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  "shutdownAction": "stopCompose",
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "forwardPorts": [5432],
+  "extensions": [],
+  "remoteUser": "vscode"
 }
