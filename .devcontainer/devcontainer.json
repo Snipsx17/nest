@@ -9,5 +9,5 @@
   },
   "forwardPorts": [5432],
   "extensions": [],
-  "remoteUser": "vscode"
+  "remoteUser": "node"
 }
